@@ -1,0 +1,8 @@
+# Ignore everything by default...
+*
+
+# ...except directories (so git can traverse into subfolders)
+!*/
+
+# ...and Python script files, at any depth
+!*.py
