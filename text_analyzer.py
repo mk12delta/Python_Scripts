@@ -4,7 +4,7 @@ NETID = "acarmine"
 
 def read_words(filename):
     words = []
-    with open(filename, "r") as infile:
+    with open(filename) as infile:
         for line in infile:
             words.extend(line.split())
     return words
@@ -53,7 +53,7 @@ def main():
         outfile.write("Longest Word: " + longest +"\n")
         outfile.write("Shortest Word: " + shortest +"\n")
         outfile.write("Average Word Length: " + str(average_len(words)) + "\n")
-        outfile.write("Most Common Starting Letter: " + most_common_start(words)+"\n")
+        outfile.write("Most Common Starting Letter: " + most_common_start(words)+"\n\n")
         outfile.write("Word Frequencies:\n")
         for word in sorted(freq):
             outfile.write(word + ": " + str(freq[word]) + "\n")

@@ -6,3 +6,4 @@
 
 # ...and Python script files, at any depth
 !*.py
+*.txt
