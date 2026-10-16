@@ -135,7 +135,7 @@ def main():
 
     with open("Carmine_Adam.summary", "w") as out:
         out.write("Apache Logfile Processor\n\n")
-        out.write(f"Logfile(s) processed: {' '.join(sys.argv[1:])}\n\n")
+        out.write(f"Logfile(s) processed: {' '.join(sys.argv[1:])} \n\n")
         for title, report, sort_key in reports:
             write_report(out, title, counts.get(report, {}), sort_key)
         out.write(f"Total bytes served: {counts.get('bytes', 0)}\n")
