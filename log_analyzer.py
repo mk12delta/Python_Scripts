@@ -138,7 +138,7 @@ def main():
         out.write(f"Logfile(s) processed: {' '.join(sys.argv[1:])} \n\n")
         for title, report, sort_key in reports:
             write_report(out, title, counts.get(report, {}), sort_key)
-        out.write(f"Total bytes served: {counts.get('bytes', 0)}\n")
+        out.write(f"Total bytes served: {counts.get('bytes', 0)}\n\n")
     print("DONE!")
 
 if __name__ == "__main__":
